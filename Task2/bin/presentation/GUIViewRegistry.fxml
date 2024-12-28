@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="600.0" styleClass="form-container" stylesheets="@../bussiness/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bussiness.GUIViewRegistryController"> <children>
+      <Button fx:id="Btnsave" layoutX="330.0" layoutY="69.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="140.0" text="Realizar la opcion">
+         <opaqueInsets>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </opaqueInsets></Button>
+      <ListView fx:id="listRes" layoutX="198.0" layoutY="194.0" prefHeight="275.0" prefWidth="403.0" />
+      <Label layoutX="286.0" layoutY="165.0" prefHeight="28.0" prefWidth="235.0" text="LISTA DE RESERVACIONES" />
+      <Label layoutX="34.0" layoutY="14.0" prefHeight="13.0" prefWidth="123.0" text="idReservacion" />
+      <Label layoutX="30.0" layoutY="89.0" text="nombrePasajero" />
+      <Label layoutX="62.0" layoutY="165.0" text="origen" />
+      <Label layoutX="59.0" layoutY="241.0" text="destino" />
+      <Label layoutX="47.0" layoutY="320.0" text="fechaVuelo" />
+      <Label layoutX="63.0" layoutY="394.0" text="precio" />
+      <TextField fx:id="txtReservation" layoutX="21.0" layoutY="56.0" />
+      <TextField fx:id="txtName" layoutX="21.0" layoutY="136.0" />
+      <TextField fx:id="txtOrigin" layoutX="21.0" layoutY="210.0" />
+      <TextField fx:id="txtPrice" layoutX="21.0" layoutY="435.0" />
+      <TextField fx:id="txtDestination" layoutX="21.0" layoutY="287.0" />
+      <DatePicker fx:id="flightDate" layoutX="20.0" layoutY="362.0" />
+      <Label layoutX="326.0" layoutY="12.0" prefHeight="16.0" prefWidth="174.0" text="Seleccione una opción." />
+      <ComboBox fx:id="option" layoutX="320.0" layoutY="43.0" prefHeight="25.0" prefWidth="186.0" />
+      <Label fx:id="labelMassage" layoutX="195.0" layoutY="118.0" prefHeight="35.0" prefWidth="307.0" visible="false">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+   </children>
+</AnchorPane>

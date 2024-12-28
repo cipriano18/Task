@@ -1,0 +1,58 @@
+#Btnsave {
+    -fx-background-color: #a9a9a9;
+    -fx-text-fill: white;
+    -fx-border-color: #00008b;
+    -fx-border-radius: 8px;
+    -fx-padding: 10px 20px;
+}
+
+#Btnsave:hover {
+    -fx-cursor: hand;
+}
+
+#labelMassage {
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-text-fill: #FF6347;  
+    -fx-background-color: transparent;
+    -fx-border-color: #3390ff;
+    -fx-border-width: 2px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+    -fx-opacity: 1;
+}
+
+#labelMassage .text {
+    -fx-stroke-width: 1px;   
+}
+
+
+.form-container Label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 10px;
+    -fx-background-color: #808080;
+    -fx-border-color: #f5deb3;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+.form-container {
+    -fx-border-color: #ffd700;
+    -fx-background-color: #708090;
+    -fx-border-width: 3px;
+    -fx-border-radius: 5px;
+}
+
+#listRes {
+    -fx-text-fill: white;
+    -fx-border-color: #00ff00;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-color: transparent;
+}
+
