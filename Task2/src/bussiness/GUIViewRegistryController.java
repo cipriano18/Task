@@ -90,7 +90,7 @@ public class GUIViewRegistryController implements Initializable {
 
     private void setFlightReservation() {
         if (CheckRequiredFields()) {
-            notify(" Todos los campos son obligatorios. Por favor, completa la información.");
+            notify(" Todos los campos son obligatorios.");
         } else {
             FlightReservation flightReservation = new FlightReservation();
             flightReservation.setReservationId(txtReservation.getText());
@@ -153,7 +153,7 @@ public class GUIViewRegistryController implements Initializable {
     public void search() {
         String id = txtReservation.getText();
         if (id == null || id.isEmpty()) {
-            notify("Por favor, ingrese un ID de reservación.");
+            notify(" Por favor, ingresa un ID para buscar.");
             return;  
         }
 
@@ -168,7 +168,7 @@ public class GUIViewRegistryController implements Initializable {
         String idSearch = txtReservation.getText();
 
         if (idSearch == null || idSearch.isEmpty()) {
-            notify(" Por favor, ingresa un ID de reservación.");
+            notify(" Por favor, ingresa un ID para buscar.");
          
     return;
         }

@@ -8,4 +8,5 @@ module Task2 {
 	requires javafx.graphics;
 	opens bussiness to javafx.graphics, javafx.fxml;
 	exports domain;
+
 }
